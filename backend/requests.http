@@ -1,0 +1,61 @@
+### -------------------- REGISTER USER --------------------
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "123456",
+  "role": "student"
+}
+
+### -------------------- LOGIN USER --------------------
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "john@example.com",
+  "password": "123456"
+}
+
+### -------------------- ADD QUESTION (PROTECTED, Instructor/Admin only) --------------------
+POST http://localhost:5000/api/questions/add
+Authorization: Bearer <JWT_TOKEN>
+Content-Type: application/json
+
+{
+  "title": "What is 2 + 2?",
+  "type": "mcq",
+  "options": ["3", "4", "5"],
+  "correctAnswer": "4",
+  "topic": "Math",
+  "bloomLevel": "remember",
+  "skills": ["Addition"]
+}
+
+### -------------------- GET ALL QUESTIONS --------------------
+GET http://localhost:5000/api/questions
+
+### -------------------- GET QUESTIONS BY TOPIC --------------------
+GET http://localhost:5000/api/questions/topic/Math
+
+### -------------------- GET QUESTIONS WITH FILTER --------------------
+GET http://localhost:5000/api/questions/filter?difficulty=easy&type=mcq
+
+### -------------------- LOG ATTEMPT (PROTECTED) --------------------
+POST http://localhost:5000/api/attempts
+Authorization: Bearer <JWT_TOKEN>
+Content-Type: application/json
+
+{
+  "questionId": "<QUESTION_ID>",
+  "isCorrect": true
+}
+
+### -------------------- GET NEXT QUESTION (PROTECTED) --------------------
+GET http://localhost:5000/api/attempts/next-question
+Authorization: Bearer <JWT_TOKEN>
+
+### -------------------- GET USER PROGRESS (PROTECTED) --------------------
+GET http://localhost:5000/api/attempts/progress
+Authorization: Bearer <JWT_TOKEN>

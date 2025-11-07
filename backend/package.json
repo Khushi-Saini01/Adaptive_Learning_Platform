@@ -1,0 +1,35 @@
+{
+  "name": "adaptive-learning-backend",
+  "version": "1.0.0",
+  "description": "Backend for Adaptive Learning Platform built with Node.js, Express, and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "jest"
+  },
+  "keywords": ["adaptive-learning", "backend", "nodejs", "express", "mongodb"],
+  "author": "Khushi Saini",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.0",
+    "jest": "^29.0.0",
+    "supertest": "^6.3.3"
+  }
+}
