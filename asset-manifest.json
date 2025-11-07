@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Adaptive_Learning_Platform/static/css/main.e5968673.css",
-    "main.js": "/Adaptive_Learning_Platform/static/js/main.0ecaec2e.js",
+    "main.css": "/Adaptive_Learning_Platform/static/css/main.f7d4decb.css",
+    "main.js": "/Adaptive_Learning_Platform/static/js/main.a409f7bc.js",
     "index.html": "/Adaptive_Learning_Platform/index.html",
-    "main.e5968673.css.map": "/Adaptive_Learning_Platform/static/css/main.e5968673.css.map",
-    "main.0ecaec2e.js.map": "/Adaptive_Learning_Platform/static/js/main.0ecaec2e.js.map"
+    "main.f7d4decb.css.map": "/Adaptive_Learning_Platform/static/css/main.f7d4decb.css.map",
+    "main.a409f7bc.js.map": "/Adaptive_Learning_Platform/static/js/main.a409f7bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5968673.css",
-    "static/js/main.0ecaec2e.js"
+    "static/css/main.f7d4decb.css",
+    "static/js/main.a409f7bc.js"
   ]
 }
