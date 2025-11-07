@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      // Adjust basePath if your repo name or homepage differs
+      var basePath = '/Adaptive_Learning_Platform';
+      var path = window.location.pathname;
+      // Remove basePath from path if present
+      if (path.indexOf(basePath) === 0) {
+        path = path.slice(basePath.length);
+      }
+      // Redirect to index.html with hash route (so React Router can read it)
+      window.location.replace(basePath + '/#' + path + window.location.search + window.location.hash);
+    </script>
+  </head>
+  <body></body>
+</html>
